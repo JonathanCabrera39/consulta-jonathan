@@ -9,7 +9,7 @@ function asureAuth(req, res, next) {
     res.status(403).send({ msg: "la peticion no tiene la cabecera" });
   }
 
-  const token = req.headers.authorization.replace("Bearer ", " ");
+  const token = req.headers.authorization.replace("Bearer ","");
 
   try {
     const payload = jwt.decode(token);

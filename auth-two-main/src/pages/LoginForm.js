@@ -36,16 +36,16 @@ const LoginForm = () => {
 
     try {
       const { accesse } = await loginFetch(formData);
-      // login(accesse);
-      //localStorage.setItem("accesse", accesse);
-      if (accesse) {
-        setUser({
-          firstname: "jonathan",
-          lastname: "cabrera",
-          email: "jona@test.static.com",
-        });
+       login(accesse);
+       localStorage.setItem("accesse", accesse);
+      // if (accesse) {
+      //   setUser({
+      //     firstname: "jonathan",
+      //     lastname: "cabrera",
+      //     email: "jona@test.static.com",
+      //   });
         
-      }
+      // }
       console.log(accesse);
 
       setError(" ");

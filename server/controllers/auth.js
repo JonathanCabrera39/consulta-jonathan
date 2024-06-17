@@ -14,7 +14,7 @@ async function register(req, res) {
     lastname: lastname,
     email: email.toLowerCase(),
     password: password,
-    active: false,
+    active: true,
     role: "user",
   });
 
